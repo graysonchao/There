@@ -1,0 +1,16 @@
+{
+	"name": "There",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"description": "Randomly changes occurrences of their/they're/there to other forms of they're/there/their.",
+
+	"content_scripts": [
+		{
+		"matches": ["http://*/*"],
+		"js": ["jquery.js", "there.js"]
+		}
+	],
+
+	"permissions": ["tabs", "http://*/*", "https://*/*"]
+}
